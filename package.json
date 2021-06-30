@@ -1,0 +1,23 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN ProShop",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engrmazharjan/ProShop.git"
+  },
+  "author": "Mazhar Jan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/engrmazharjan/ProShop/issues"
+  },
+  "homepage": "https://github.com/engrmazharjan/ProShop#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1"
+  }
+}
