@@ -1,3 +1,5 @@
+import { errorHandler, notFound } from "./middleware/errorMiddleware.js";
+
 import colors from "colors";
 import connectDB from "./config/db.js";
 import dotenv from "dotenv";
@@ -20,6 +22,10 @@ app.get("/api/products/:id", (req, res) => {
   const product = products.find((p) => p._id === req.params.id);
   res.json(product);
 });
+
+// Middleware
+app.use(notFound);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 app.listen(
