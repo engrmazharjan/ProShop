@@ -4,19 +4,25 @@ import colors from "colors";
 import connectDB from "./config/db.js";
 import dotenv from "dotenv";
 import express from "express";
-import productRoutes from "./routes/productRoutes.js";
+import productRoutes from "./routes/productRoutes.js"; // Routes
+import userRoutes from "./routes/userRoutes.js"; // Routes
 
 dotenv.config();
 
 // Connect To DB
 connectDB();
+
 const app = express();
+// JSON
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("API Is Running");
 });
 
+// Routes
 app.use("/api/products", productRoutes);
+app.use("/api/users", userRoutes);
 
 app.get("/api/products/:id", (req, res) => {
   const product = products.find((p) => p._id === req.params.id);
