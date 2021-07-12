@@ -4,6 +4,7 @@ import colors from "colors";
 import connectDB from "./config/db.js";
 import dotenv from "dotenv";
 import express from "express";
+import orderRoutes from "./routes/orderRoutes.js"; // Routes
 import productRoutes from "./routes/productRoutes.js"; // Routes
 import userRoutes from "./routes/userRoutes.js"; // Routes
 
@@ -23,6 +24,7 @@ app.get("/", (req, res) => {
 // Routes
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/orders", orderRoutes);
 
 app.get("/api/products/:id", (req, res) => {
   const product = products.find((p) => p._id === req.params.id);
