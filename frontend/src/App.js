@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomeScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
+import OrderScreen from "./screens/OrderScreen";
 import PaymentScreen from "./screens/PaymentScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import ProductScreen from "./screens/ProductScreen";
@@ -20,6 +21,7 @@ function App() {
       <Header />
       <main className="py-3">
         <Container>
+          <Route path="/order/:id" component={OrderScreen} />
           <Route path="/shipping" component={ShippingScreen} />
           <Route path="/payment" component={PaymentScreen} />
           <Route path="/placeorder" component={PlaceOrderScreen} />
