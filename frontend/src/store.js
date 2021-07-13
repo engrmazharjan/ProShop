@@ -6,6 +6,7 @@ import {
   orderPayReducer,
 } from "./reducers/orderReducers";
 import {
+  productDeleteReducer,
   productDetailReducer,
   productListReducer,
 } from "./reducers/productReducers";
@@ -26,6 +27,7 @@ import thunk from "redux-thunk";
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailReducer,
+  productDelete: productDeleteReducer,
   cart: cartReducer,
   userLogin: userLoginReducer,
   userRegister: userRegisterReducer,
