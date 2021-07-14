@@ -144,7 +144,7 @@ const PlaceOrderScreen = ({ history }) => {
               <ListGroup.Item>
                 <Button
                   type="button"
-                  className="grid col-12"
+                  className="grid col-12 ltrSpace"
                   disabled={cart.cartItems === 0}
                   onClick={placeOrderHandle}
                 >
