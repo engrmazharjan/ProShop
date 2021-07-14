@@ -88,7 +88,7 @@ const ProductEditScreen = ({ match, history }) => {
               <Form.Control
                 className="mb-3"
                 type="text"
-                placeholder="Enter Your Name"
+                placeholder="Enter Product Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               ></Form.Control>
@@ -99,7 +99,7 @@ const ProductEditScreen = ({ match, history }) => {
               <Form.Control
                 className="mb-3"
                 type="number"
-                placeholder="Enter Your Price"
+                placeholder="Enter Product Price"
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
               ></Form.Control>
@@ -110,7 +110,7 @@ const ProductEditScreen = ({ match, history }) => {
               <Form.Control
                 className="mb-3"
                 type="text"
-                placeholder="Enter Your Image URL"
+                placeholder="Enter Product Image URL"
                 value={image}
                 onChange={(e) => setImage(e.target.value)}
               ></Form.Control>
@@ -121,7 +121,7 @@ const ProductEditScreen = ({ match, history }) => {
               <Form.Control
                 className="mb-3"
                 type="text"
-                placeholder="Enter Your Brand"
+                placeholder="Enter Product Brand"
                 value={brand}
                 onChange={(e) => setBrand(e.target.value)}
               ></Form.Control>
@@ -132,7 +132,7 @@ const ProductEditScreen = ({ match, history }) => {
               <Form.Control
                 className="mb-3"
                 type="text"
-                placeholder="Enter Your Category"
+                placeholder="Enter Product Category"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
               ></Form.Control>
@@ -143,7 +143,7 @@ const ProductEditScreen = ({ match, history }) => {
               <Form.Control
                 className="mb-3"
                 type="number"
-                placeholder="Enter Your Count In Stock Number"
+                placeholder="Enter Product Count In Stock Number"
                 value={countInStock}
                 onChange={(e) => setCountInStock(e.target.value)}
               ></Form.Control>
@@ -154,7 +154,7 @@ const ProductEditScreen = ({ match, history }) => {
               <Form.Control
                 className="mb-3"
                 type="text"
-                placeholder="Enter Your Description"
+                placeholder="Enter Product Description"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
               ></Form.Control>
